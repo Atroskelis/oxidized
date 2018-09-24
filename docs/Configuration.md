@@ -165,6 +165,8 @@ model_map:
 
 For group specific credentials
 
+
+
 ```yaml
 groups:
   mikrotik:
@@ -186,6 +188,8 @@ map:
 
 For model specific credentials
 
+You can also add 'nil' to the username if the host only asks for Password at prompt. 
+
 ```yaml
 models:
   junos:
@@ -199,6 +203,10 @@ models:
   apc_aos:
     username: apc
     password: password
+  cisco:
+    username: nil
+    password: password
+  
 ```
 
 ## RESTful API and Web Interface
